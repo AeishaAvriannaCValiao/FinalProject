@@ -52,19 +52,23 @@ main {
 }
 
 .back-button {
-    display: inline-block;
-    background-color: #f39c12;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #f39c12; 
     color: #fff;
-    padding: 10px 15px;
+    padding: 12px 18px; 
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 8px; 
+    font-size: 16px; 
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .back-button:hover {
-    background-color: #e67e22;
-    transform: scale(1.05);
+    background-color: #e67e22; 
+    transform: scale(1.1); 
 }
 
 section {
@@ -118,4 +122,16 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('Images/smt.avif'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: #fff;
 }
