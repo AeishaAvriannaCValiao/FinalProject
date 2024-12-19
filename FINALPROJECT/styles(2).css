@@ -24,6 +24,9 @@ header {
     align-items: center;
     padding: 30px;
     backdrop-filter: blur(5px);
+    background-image: url('Images/header-bg.jpg'); /* Example of background-image */
+    background-size: cover; /* Ensure the background covers the header area */
+    background-position: center; /* Center the background image */
 }
 
 #logo {
@@ -64,7 +67,6 @@ h2 {
     align-items: center;
 }
 
-
 nav {
     display: flex;
     justify-content: center;
@@ -82,19 +84,17 @@ nav a {
     color: #fff;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    background-image: url('Images/sprite.png'); 
+    background-image: url('Images/sprite.png'); /* Example sprite background image */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Background will cover the entire area */
 }
 
-/* Animations for hover */
 nav a:hover {
     transform: translateY(-5px);
     color: #f39c12;
-    background-color: rgba(255, 255, 255, 0.2); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 
 nav a:nth-child(1) {
     background-position: 0 0;
@@ -112,7 +112,6 @@ nav a:nth-child(4) {
     background-position: -360px 0;
 }
 
-/* Main content */
 main {
     max-width: 1000px;
     margin: 20px auto;
@@ -120,8 +119,10 @@ main {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    background-image: url('Images/main-bg.jpg'); /* Example background image for main content */
+    background-size: cover;
+    background-position: center;
 }
-
 
 #videos, #pictures {
     margin: 30px 0;
@@ -129,6 +130,9 @@ main {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
+    background-image: url('Images/video-bg.jpg'); /* Example background for the video section */
+    background-size: cover;
+    background-position: center;
 }
 
 #videos h3, #pictures h3 {
@@ -146,6 +150,8 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     max-width: 800px;
+    background-image: url('Images/video-container-bg.jpg'); /* Specific background for video containers */
+    background-size: cover;
 }
 
 video {
@@ -164,7 +170,6 @@ video {
     margin-top: 10px;
 }
 
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +185,7 @@ video {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.2); /* Example background color for images */
 }
 
 .gallery img:hover {
@@ -191,13 +197,14 @@ video {
     margin: 30px 0;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('Images/footer-bg.jpg'); /* Footer background image */
+    background-size: cover;
+    background-position: center;
 }
-
 
 .back-to-home {
     position: fixed;
@@ -212,9 +219,45 @@ footer {
     cursor: pointer;
     z-index: 1000;
     transition: all 0.3s ease;
+    background-image: url('Images/button-bg.png'); 
+    background-size: cover;
+    background-position: center;
 }
 
 .back-to-home:hover {
     background-color: darkorange;
     transform: scale(1.1);
+}
+
+audio[autoplay] {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+}
+    border: 2px solid #f39c12;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+nav a[href*="#about"] {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('Images/about-bg.jpg'); 
+    background-size: cover;
+}
+
+nav a[href*="#causes"] {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('Images/causes-bg.jpg'); 
+    background-size: cover;
+}
+
+nav a[href*="#effects"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('Images/effects-bg.jpg'); 
+    background-size: cover;
+}
+
+nav a[href*="#current-issues"] {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('Images/issues-bg.jpg'); 
+    background-size: cover;
 }
