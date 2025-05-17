@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -186,4 +187,89 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Small Quiz Box */
+#quiz-box {
+    position: fixed; /* Stays in bottom-right corner even when scrolling */
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+/* Buttons */
+#quiz-box button {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+#quiz-box button:hover {
+    background-color: #e67e22; /* Darker Orange */
+    transform: scale(1.1);
+}
+
+#campaign-box {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black */
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+#campaign-box {
+    position: fixed;
+    bottom: 165px; /* <- Pushes it up above #quiz-box */
+    right: 20px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+
+/* Hover Effect */
+#campaign-box button:hover {
+    background-color: #e67e22; /* Darker Orange */
+    transform: scale(1.1);
+}
+
+
+#campaign-box button {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
